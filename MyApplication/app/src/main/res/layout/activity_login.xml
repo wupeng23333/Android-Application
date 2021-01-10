@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:text="⽤户登录"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.8"
+        android:src="@drawable/user_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="⽤户姓名:"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/username" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输⼊⽤户名"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="⽤户密码:"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/userpassword" />
+
+        <EditText
+            android:id="@+id/userpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输⼊登录密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⽤户类型:"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/type_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/type_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="学⽣" />
+
+            <RadioButton
+                android:id="@+id/type_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="教师" />
+
+            <RadioButton
+                android:id="@+id/type_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管理员" />
+        </RadioGroup>
+    </LinearLayout>-->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码" />
+
+        <CheckBox
+            android:id="@+id/cb_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⾃动登录" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:onClick="btnOnClick"
+            android:text="⽤户登录" />
+
+        <Button
+            android:id="@+id/reg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:onClick="btnOnClick"
+            android:text="⽤户注册" />
+    </LinearLayout>
+
+</LinearLayout>

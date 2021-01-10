@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:text="⽤户注册"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.8"
+        android:src="@drawable/user_reg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="⽤户姓名:"
+            android:textSize="20dp" />
+
+        <!--<ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/username" />-->
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="请输⼊⽤户名"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="密码:"
+            android:textSize="20sp" />
+
+        <!--<ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/userpassword" />-->
+
+        <EditText
+            android:id="@+id/userpassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="请输⼊登录密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:text="性别:"
+            android:textSize="20sp" />
+
+        <!--<ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/userpassword" />-->
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="男" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="城市:"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="请选择城市"
+            android:onClick="editTextOnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="出生日期:"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/birthday"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="请选择出生日期"
+            android:onClick="editTextOnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="电话号码:"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="请输⼊电话"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="btnOnClick"
+        android:text="提交" />
+
+
+</LinearLayout>
