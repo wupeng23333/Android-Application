@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F0FFFF"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="信息查询"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="请输入你要查询的信息" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="常用信息"
+        android:layout_gravity="center"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_search_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="校园黄页" />
+
+    <Button
+        android:id="@+id/btn_search_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="院历" />
+
+    <Button
+        android:id="@+id/btn_search_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="班车查询" />
+
+    <Button
+        android:id="@+id/btn_search_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="交通咨询" />
+
+
+</LinearLayout>
